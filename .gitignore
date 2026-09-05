@@ -2,3 +2,14 @@ node_modules
 dist
 *.log
 .DS_Store
+
+# Build artefacts
+diskly
+diskly.exe
+*.exe
+.bun
+
+# Editor / OS
+.idea
+.vscode
+*.swp

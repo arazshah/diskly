@@ -1,17 +1,51 @@
 {
   "name": "diskly",
   "version": "1.0.0",
-  "description": "TUI disk space analyzer, mover & guard - powered by Bun",
-  "module": "src/index.ts",
+  "description": "Terminal-first disk space analyzer, junk finder & duplicate remover powered by Bun, with an optional LLM (AvalAI) assistant.",
+  "module": "src/cli.ts",
   "type": "module",
   "bin": {
-    "diskly": "src/index.ts"
+    "diskly": "src/cli.ts"
   },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "package.json",
+    "tsconfig.json"
+  ],
   "scripts": {
-    "dev": "bun run src/index.ts",
-    "build": "bun build src/index.ts --compile --outfile diskly",
-    "guard": "bun run src/index.ts guard run",
-    "start": "bun run src/index.ts"
+    "dev": "bun run src/cli.ts",
+    "start": "bun run src/cli.ts",
+    "build": "bun build src/cli.ts --compile --outfile dist/diskly",
+    "build:target": "bun build src/cli.ts --compile --target=bun-linux-x64 --outfile dist/diskly",
+    "guard": "bun run src/cli.ts guard run",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "disk",
+    "disk-usage",
+    "tui",
+    "terminal",
+    "bun",
+    "duplicates",
+    "junk-files",
+    "cleanup",
+    "llm",
+    "avalai"
+  ],
+  "license": "MIT",
+  "author": "Araz",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/araz/diskly.git"
+  },
+  "bugs": {
+    "url": "https://github.com/araz/diskly/issues"
+  },
+  "homepage": "https://github.com/araz/diskly#readme",
+  "engines": {
+    "bun": ">=1.1.0"
   },
   "devDependencies": {
     "@types/bun": "latest",
