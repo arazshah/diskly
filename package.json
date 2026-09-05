@@ -1,0 +1,20 @@
+{
+  "name": "diskly",
+  "version": "1.0.0",
+  "description": "TUI disk space analyzer, mover & guard - powered by Bun",
+  "module": "src/index.ts",
+  "type": "module",
+  "bin": {
+    "diskly": "src/index.ts"
+  },
+  "scripts": {
+    "dev": "bun run src/index.ts",
+    "build": "bun build src/index.ts --compile --outfile diskly",
+    "guard": "bun run src/index.ts guard run",
+    "start": "bun run src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.6.0"
+  }
+}
