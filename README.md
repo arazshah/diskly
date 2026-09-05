@@ -11,6 +11,7 @@ plan — all from your terminal.
 [AvalAI]: https://avalai.ir
 
 ---
+![image](screen.jpg)
 
 ## ✨ Features
 
