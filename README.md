@@ -11,7 +11,11 @@ plan — all from your terminal.
 [AvalAI]: https://avalai.ir
 
 ---
-![image](screen.jpg)
+<p align="center">
+  <img src="./screen.png" alt="diskly terminal screenshot" width="900">
+  <br />
+  <em>diskly — terminal disk space analyzer</em>
+</p>
 
 ## ✨ Features
 
